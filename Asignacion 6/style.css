@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 30%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.center-text {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.checkbox-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Pseudoclases Primera Diapositiva */
+input[type="range"]:hover {
+    background-color: #f0f0f0;
+}
+
+input[type="text"]:hover {
+    background-color: #f0f0f0;
+    border-color: #ffcc00;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border: 2px solid #ff9900;
+}
+
+input[type="checkbox"]:checked + label {
+    color: black;
+    font-weight: bold;
+}
+
+.checkbox-item:first-child label {
+    color: #ff1e1e;
+}
+
+input[type="range"]:in-range {
+    background-color: #32cd32;
+}
+
+/* Pseudoclases Segunda Diapositiva */
+input[type="range"]:out-of-range {
+    background-color: red;
+}
+
+input:read-write {
+    background-color: #e6ffe6;
+    border: 2px solid #32cd32;
+}
+
+textarea[readonly]:read-only {
+    background-color: #f0f0f0;
+    border-color: red;
+}
+
+input:required {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+input:valid {
+    background-color: 2px solid green;
+}
+
+/* Pseudoclases Teccera Diapositiva */
+input:invalid {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+input:not([type="text"]) {
+    background-color: #e6f7ff;
+}
+
+.checkbox-item:nth-child(3) {
+    background-color: #f0f0f0; 
+}
+
+.checkbox-item:nth-last-child(2) {
+    background-color: #e0e0e0; 
+}
+
+
+
